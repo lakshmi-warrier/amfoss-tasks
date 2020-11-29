@@ -1,4 +1,4 @@
-#  Points: 100
+#  Points: 90
 trials  = int(input())
 
 for i in range(trials):
