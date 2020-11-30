@@ -12,7 +12,7 @@
 | 7 |    Didn't complete. (Big mistake. Deleted Android Studio when I ran out of space-lost everything I was working on)   |
 | 8| Completed |
 | 9| Completed |
-| 10| 2/5 completed, 1 incomplete |
+| 10| 2/5 psets completed, 1 incomplete |
 | 11| Didn't try |
 | 12| Tried |
 | 13| Didn't try |
