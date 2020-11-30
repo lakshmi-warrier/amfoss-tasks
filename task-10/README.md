@@ -14,3 +14,7 @@ Nov 21:
 
 - [initials.c](/task-10/pset2/initials.c)
 - [initialsMore.c](/task-10/pset2/initialsMore.c)
+
+### [PROBLEM SET -0](/task-10/pset0)
+Nov 30:
+- [Riddle](/task-10/pset0/README.md)
