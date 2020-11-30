@@ -256,6 +256,8 @@ public class MathQuiz extends JFrame {
         public void actionPerformed(ActionEvent e) {
             num1 = (int)(Math.random() * 7 + 3); // generating number 3 - 10
             num2 = (int)(Math.random() * 7 + 3);
+            while(num2 == 0)
+                num2 = (int)(Math.random() * 7 +3);
             interval = 2; // for generating random numbers after first progress is completed
         }
     }
@@ -264,6 +266,8 @@ public class MathQuiz extends JFrame {
         public void actionPerformed(ActionEvent e) {
             num1 = (int)(Math.random() * 21); // generating number 0 - 20
             num2 = (int)(Math.random() * 21);
+            while(num2 == 0)
+                num2 = (int)(Math.random() * 21);
             interval = 3; // for generating random numbers after first progress is completed
         }
     }
@@ -324,6 +328,8 @@ public class MathQuiz extends JFrame {
             if (interval != 4 && interval != 3 && interval != 2 && interval != 1) {
                 num1 = (int)(Math.random() * 100);
                 num2 = (int)(Math.random() * 100);
+                while(num2==0)
+                    num2 = (int)(Math.random() * 100);
             }
 
 
@@ -385,21 +391,32 @@ public class MathQuiz extends JFrame {
                 if (interval == 1) {
                     num1 = (int)(Math.random() * 6);
                     num2 = (int)(Math.random() * 6);
+                    while(num2 == 0)
+                        num2 = (int)(Math.random() * 6);
                 } else if (interval == 2) {
                     num1 = (int)(Math.random() * 7 + 3);
                     num2 = (int)(Math.random() * 7 + 3);
+                    while(num2 == 0)
+                        num2 = (int)(Math.random() * 7 +3);
                 } else if (interval == 3) {
                     num1 = (int)(Math.random() * 21);
                     num2 = (int)(Math.random() * 21);
+                    while(num2 == 0)
+                        num2 = (int)(Math.random() * 21);
                 } else if (interval == 4) {
                     int doubleOfInterval1 = Integer.parseInt(interval1.getText());
                     int doubleOfInterval2 = Integer.parseInt(interval2.getText());
 
                     num1 = (int)(Math.random() * (doubleOfInterval2 - doubleOfInterval1 + 1) + doubleOfInterval1);
                     num2 = (int)(Math.random() * (doubleOfInterval2 - doubleOfInterval1 + 1) + doubleOfInterval1);
-                } else {
+                    while(num2 == 0)
+                        num2 = (int)(Math.random() * (doubleOfInterval2 - doubleOfInterval1 + 1) + doubleOfInterval1);
+                } 
+                else {
                     num1 = (int)(Math.random() * 100);
                     num2 = (int)(Math.random() * 100);
+                    while(num2 == 0)
+                        num2 = (int)(Math.random() * 100);
                 }
 
                 //re-generating formula
@@ -414,7 +431,7 @@ public class MathQuiz extends JFrame {
                     result = num1 + num2;
                     question = ("" + num1 + "+" + num2);
                 } else if (operator == 4) {
-                    result = num1 * num2;
+                    result =(double) num1 / num2;
                     question = ("" + num1 + "/" + num2);
                 } else {
                     result = num1 + num2;
